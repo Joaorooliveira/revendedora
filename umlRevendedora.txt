@@ -1,0 +1,52 @@
++--------------------------------+
+|          Veiculo               |
++--------------------------------+
+| - id: int                      |
+| - marca: String                |
+| - modelo: String               |
+| - ano: int                     |
+| - preco: double                |
++--------------------------------+
+| + getId(): int                 |
+| + getMarca(): String           |
+| + getModelo(): String          |
+| + getAno(): int                |
+| + getPreco(): double           |
+| + setId(id: int): void         |
+| + setMarca(marca: String): void|
+| + setModelo(modelo: String): void|
+| + setAno(ano: int): void       |
+| + setPreco(preco: double): void|
++--------------------------------+
+          ^
+          |
+          |
++------------------+
+|    Carro         |
++------------------+
+| + tipo: String   |
++------------------+
+| + getTipo(): String |
+| + setTipo(tipo: String): void |
++------------------+
+
++---------------------------------+
+|          VeiculoDAO             |
++---------------------------------+
+| + cadastrar(veiculo: Veiculo): void|
+| + consultar(id: int): Veiculo   |
+| + atualizar(veiculo: Veiculo): void|
+| + excluir(id: int): void        |
++---------------------------------+
+
++---------------------------------+
+|          ConexaoBD              |
++---------------------------------+
+| + conectar(): Connection        |
++---------------------------------+
+
++---------------------------------+
+|            Main                 |
++---------------------------------+
+| + main(args: String[]): void    |
++---------------------------------+
